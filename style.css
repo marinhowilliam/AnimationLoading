@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #000;
+}
+
+h1{
+    color: white;
+    font-family: 'Common Pixel', sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    padding: 100px;
+    position: relative;
+}
+
+.b1{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    animation: boll1 1s linear infinite;
+    position: absolute;
+    
+}
+
+.b2{
+    height: 50px;
+    width: 50px;
+    background: blue;
+    border-radius: 50%;
+    animation: boll1 1s linear infinite;
+    position: absolute;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes boll1{
+    0% {
+        left: 0;
+      }
+      30% {
+        transform: scale(1.5);
+        left: 100px;
+      }
+      60% {
+        transform: scale(1);
+        left: 200px;
+      }
+      90% {
+        transform: scale(0.5);
+        left: 10px;
+      }
+      100% {
+        transform: scale(1);
+        left: 0px;
+      }
+    }
+
+
+@keyframes boll2{
+    0% {
+        right: 0;
+    }
+      30% {
+        transform: scale(0.5);
+        right: 100px;
+      }
+      60% {
+        transform: scale(1);
+        left: 200px;
+      }
+      90% {
+        transform: scale(1.5);
+        right: 100px;
+      }
+      100% {
+        transform: scale(1);
+        right: 0px;
+      }
+    }
+    
